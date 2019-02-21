@@ -1,4 +1,4 @@
-Name of Quantlet:  DEDA_Class_2018WS_DEDA_Markov_Chain_LSTM_Text_Generation_Trump_Twitter
+Name of Quantlet:  DEDA_WS201819_MARKOV_Chains_LSTM_Trump_Tweets
  
 
 
