@@ -13,7 +13,7 @@ Author: 'Alex Truesdale'
 
 Submitted: 'Sun. Feb 26 2019 by Alex Truesdale'
 
-Datafile: '../final_listings (csv)'
+Datafile: 'final_listings (csv)'
 
 See also: '1) gwr_stats_meta.csv
            2) gwr_stats_features.csv'

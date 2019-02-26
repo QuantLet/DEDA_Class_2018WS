@@ -84,6 +84,6 @@ raw_map_out.scatter(centre_lat_list, centre_lng_list, '#F76A7D', size = 130, mar
 time.sleep(1.5)
 
 # Trigger write / compile method to create final map.
-raw_map_out.draw("hospitals.html")
-print("------ saving map as: 'hospitals.html' in 'runtime_generated' \n")
+raw_map_out.draw("medical.html")
+print("------ saving map as: 'medical.html' in 'runtime_generated' \n")
 time.sleep(.5)
