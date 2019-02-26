@@ -1,0 +1,62 @@
+rm( list = ls( all = TRUE ))
+
+"rho.l" &lt;- function(u) 
+ {	f = u^2  
+  list(f = f) }
+  
+"rho.a" &lt;- function(u) 
+ {	f = abs(u)  
+  list(f = f) }  
+        
+"rho.h" &lt;- function(u,k) 
+ {	f = ifelse (abs(u) &lt; k, u^2/2, k*(abs(u) - k/2))  
+  list(f = f) }  
+
+"rho.q" &lt;- function(u, q) 
+ {	f = ifelse (u &lt; 0, q*abs(u), (1-q)*abs(u) )  
+  list(f = f) }
+        
+"rho.e" &lt;- function(u, q) 
+{f = ifelse (u &lt; 0, q*u^2, (1-q)*u^2 )   
+  list(f = f) }
+  
+# "rho.hq" &lt;- function(u, q, k) 
+# {f = ifelse(u &lt; (-k)*q, q*abs(u) - (k*q^2)/2, ifelse( u &gt;= (-k)*q |u &lt;= k*(1-q), u^2/(2*k), (1-q)*abs(u) - (k*(1-q)^2)/2) )
+  # list(f = f) }
+  
+"rho.hq" &lt;- function(u, q, k) 
+{f = ifelse(u &lt; (-k)*q, q*abs(u) - (k*q^2)/2, ifelse( u &gt;= (-k)*q |u &lt;= k*(1-q), u^2/(2*k), (1-q)*abs(u) - (k*(1-q)^2)/2) )
+  list(f = f) }
+  
+n 	= 	100
+tau   = 0.1
+k   =   1
+
+x	=	-3 + 6*(0:n)/(n)
+#x   = rnorm(100,0,10)
+#x   = rt(100,3)
+
+y.l = rho.l(x)
+y.a = rho.a(x)
+y.h = rho.h(x, k = k)
+
+y.q = rho.q(x, q = tau)
+y.e = rho.e(x, q = tau)
+y.hq = rho.hq(x, q = tau, k=k)
+
+# par(mfrow=c(1,2))
+# plot(sort(x), y.a$f[order(x)],type="l",col="black", lwd=3, cex.axis=1, xaxs="i", yaxs="i", xlab="x", ylab="Loss Functions for Location Estimation") 
+# lines(sort(x), y.l$f[order(x)], type="l",col="red",lwd=3)
+# lines(sort(x), y.h$f[order(x)], type="l",col="blue",lwd=3)
+
+plot(sort(x), y.q$f[order(x)],type="l",col="black", lwd=3, cex.axis=1, xaxs="i", yaxs="i", xlab="x", ylab="Loss Functions for Tail Estimation") 
+lines(sort(x), y.e$f[order(x)], type="l",col="red",lwd=3)
+lines(sort(x), y.hq$f[order(x)], type="l",col="blue",lwd=3)   
+
+# q = 0.5
+# y.q = rho.q(x, q = q)
+# y.e = rho.e(x, q = q)
+# y.hq = rho.hq(x, q = (1-q), k=k)
+# lines(x, y.q$f, type="l",col="black",lwd=3, lty = 2)
+# lines(x, y.e$f, type="l",col="red",lwd=3,lty = 2)
+# lines(x, y.hq$f, type="l",col="blue",lwd=3, lty = 2)

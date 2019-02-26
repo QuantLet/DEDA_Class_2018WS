@@ -1,0 +1,16 @@
+Name of Quantlet: 'DEDA_WS201819_growth_plot'
+
+Published in: 'Digital Economy and Decision Analytics (WS 18/19)'
+
+Description: 'Plotting script for visualising the growth in property sale
+              prices in Berlin, DE over the last 11 years (by district).'
+
+Keywords: 'Time Series Data, Real Estate, Data Visualisation'
+
+Author: 'Alex Truesdale'
+
+Submitted: 'Sun. Feb 26 2019 by Alex Truesdale'
+
+Datafile: 'price history (csv)'
+
+See also: 'output_charts/*.png'
