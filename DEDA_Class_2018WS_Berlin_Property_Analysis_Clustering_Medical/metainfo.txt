@@ -13,4 +13,4 @@ Submitted: 'Sun. Feb 26 2019 by Alex Truesdale'
 
 Datafile: 'medical (csv)'
 
-See also: '../clustering_module.py'
+See also: 'clustering_module.py'

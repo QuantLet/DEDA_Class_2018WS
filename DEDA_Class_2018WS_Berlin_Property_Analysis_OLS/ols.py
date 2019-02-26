@@ -26,7 +26,7 @@ time.sleep(8)
 
 # Read in data.
 print("------ reading data from 'final_listings.csv'")
-listings = pd.read_csv('../final_listings.csv')
+listings = pd.read_csv('final_listings.csv')
 X, y = listings.iloc[:, :-3], np.log(listings.iloc[:, -1]).values.reshape((-1, 1))
 time.sleep(1)
 

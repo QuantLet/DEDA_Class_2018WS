@@ -8,8 +8,6 @@ Jupyter Notebook for performing spatial clustering on hospital / medical locatio
 """
 
 import os
-import sys
-sys.path.insert(0, '../')
 import time
 import gmplot
 import pandas as pd
@@ -64,8 +62,8 @@ centre_lng_list = tuple([point[1] for point in centremost_points])
 time.sleep(1)
 
 # Change dir. to visualisation dir.
-print("------ changing directory to '../runtime_generated/html_renderings' \n")
-os.chdir('../runtime_generated/html_renderings')
+print("------ changing directory to 'runtime_generated' \n")
+os.chdir('runtime_generated')
 time.sleep(2)
 
 # Initialise map.
@@ -87,5 +85,5 @@ time.sleep(1.5)
 
 # Trigger write / compile method to create final map.
 raw_map_out.draw("hospitals.html")
-print("------ saving map as: 'hospitals.html' in 'runtime_generated/html_renderings' \n")
+print("------ saving map as: 'hospitals.html' in 'runtime_generated' \n")
 time.sleep(.5)
