@@ -1,0 +1,13 @@
+Spatial kernel,Adaptive bisquare
+Bandwidth used,2203.000
+Residual sum of squares,441.882
+Effective number of parameters (trace(S)),240.729
+Degree of freedom (n - trace(S)),5432.271
+Sigma estimate,0.285
+Log-likelihood,-809.668
+AIC,2102.795
+AICc,2124.405
+BIC,3708.713
+R2,0.810
+Adj. alpha (95%),0.008
+Adj. critical t value (95%),2.658
