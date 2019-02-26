@@ -13,4 +13,7 @@ Submitted: 'Sun. Feb 26 2019 by Alex Truesdale'
 
 Datafile: 'medical (csv)'
 
-See also: '../clustering_module.py'
+See also: 'clustering_module.py &
+           1) pre_generated/medical.html
+           2) pre_generated/medical.png
+           3) runtime_generated/medical.html'

@@ -13,4 +13,7 @@ Submitted: 'Sun. Feb 26 2019 by Alex Truesdale'
 
 Datafile: 'universities (csv)'
 
-See also: '../clustering_module.py'
+See also: 'clustering_module.py &
+           1) pre_generated/education_universities.html
+           2) pre_generated/education_universities.png
+           3) runtime_generated/education_universities.html'

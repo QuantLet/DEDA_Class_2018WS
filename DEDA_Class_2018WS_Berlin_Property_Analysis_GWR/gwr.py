@@ -33,7 +33,7 @@ time.sleep(8)
 
 # Read in data.
 print("------ reading data from 'final_listings.csv'")
-listings = pd.read_csv('../final_listings.csv')
+listings = pd.read_csv('final_listings.csv')
 time.sleep(1)
 
 # Feature subset definition.
