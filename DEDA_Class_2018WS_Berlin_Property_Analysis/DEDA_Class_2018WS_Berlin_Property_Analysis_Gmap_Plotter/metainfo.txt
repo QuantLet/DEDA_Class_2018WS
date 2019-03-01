@@ -15,4 +15,4 @@ Datafile: 'transit_points (xlsx)'
 
 See also: '1) pre_generated/html_renderings/*.html
            2) pre_generated/output_maps/*.png
-           3) runtime_generated/html_renderings/*.html
+           3) runtime_generated/html_renderings/*.html'
