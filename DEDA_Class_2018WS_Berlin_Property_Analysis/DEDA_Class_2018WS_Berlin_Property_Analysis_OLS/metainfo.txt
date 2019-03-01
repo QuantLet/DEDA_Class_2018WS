@@ -1,4 +1,4 @@
-Name of Quantlet: 'DEDA_WS201819_ols'
+Name of Quantlet: 'DEDA_Class_2018WS_Berlin_Property_Analysis_OLS'
 
 Published in: 'Digital Economy and Decision Analytics (WS 18/19)'
 
