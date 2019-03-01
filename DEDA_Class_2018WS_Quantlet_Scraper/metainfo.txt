@@ -1,4 +1,4 @@
-Name of Quantlet: 'DEDA_WS201819_quantlet_scraper'
+Name of Quantlet: 'DEDA_Class_2018WS_Quantlet_Scraper'
 
 Published in: 'Digital Economy and Decision Analytics (WS 18/19)'
 
