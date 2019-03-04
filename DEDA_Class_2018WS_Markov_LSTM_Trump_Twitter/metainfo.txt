@@ -10,7 +10,7 @@ Description:       "Uses Markov Chains and LSTMs to generate new text in the sty
 					Since LSTM-models are very trendy right now, I wanted to compare them to the more traditional Markov Chains.
 					Both techniques are implemented to creat text on character-level (as opposed to word-level) and can in principle be used for any kind of natural language.
 					A sufficiently large LSTM model should also be able to deal with highly structured text such as computer code - but that might require more nodes per layer and more training time. 
-					I've included the weights for a two pretrained LSTM models trained on Donald Trump tweets. You can also look at the jupyter notebook to see example outputs. 
+					I've included the weights for a two pretrained LSTM models trained on Donald Trump tweets. You can also look at the jupyter notebook to see example outputs 
 					If you get an error, make sure you have tensorflow, keras, and numpy installed and upgraded to the latest version."
 
  
