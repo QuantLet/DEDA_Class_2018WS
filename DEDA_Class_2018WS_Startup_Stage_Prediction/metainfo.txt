@@ -1,0 +1,21 @@
+Name of Quantlet:  "DEDA_WS201819_Startup_Stage_Prediction"
+
+
+Published in:      "Digital Economy and Decision Analytics (WS 18/19)"
+
+
+Description:       "Using data from Crunchbase define the deal stage of a startup. Train data is collected when the last investment round of a startup is known. Then the model is trained on other available features but investment round (e.g. age, number of employees)."
+
+
+Keywords:          "Crunchbase, Startup, Deal Stage, Classification"
+
+
+Author:            "Anna Semenova"
+
+
+Submitted:         "Thu. Mar 14 2019 by Anna Semenova"
+
+
+Datafile:          "data (csv)"
+
+ 
