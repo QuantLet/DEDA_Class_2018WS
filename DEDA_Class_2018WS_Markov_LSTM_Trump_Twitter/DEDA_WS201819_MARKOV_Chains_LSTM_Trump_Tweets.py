@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[19]:
-
 
 import random
 import os
@@ -18,13 +16,7 @@ from keras.optimizers import RMSprop
 from collections import defaultdict, Counter
 
 
-# In[13]:
-
-
 print('This script will run first the Markov Chain and then the LSTM model to generate Donald Trump tweets.\nRun the Jupyter notebook if you want to use just one or the other \n- or if you wannt to play around with state length/seed text/temperature etc.\nThe training part is commented out to prevent you from accidentally running it. It will take hours per epoch on a CPU, so make sure you run it on a powerful GPU. If your GPU is tensorflow compatible, use CuDNNLSTM instead of LSTM.')
-
-
-# In[17]:
 
 
 ## import and prepare text
@@ -37,7 +29,7 @@ rawtxt=text.encode("utf8").decode("ascii",'ignore')
 text=text[:2145192] #drop half the text to speed up everything.
 
 
-# adapted from https://github.com/keras-team/keras/blob/master/examples/lstm_text_generation.py
+# adapted from https://github.com/keras-team/keras/blob/master/examples/lstm_text_generation.py - as are some helperfunctions later on
 # Create a list of Chars
 chars = sorted(list(set(text[:2145192])))
 print('total unique chars:', len(chars),'\ncharacters:\n', chars)
@@ -65,15 +57,12 @@ for i, sentence in enumerate(sentences):
 print('Done.\nReady to generate text and further train the model.')
 
 
-# In[21]:
-
-
 # Markov chain
 #'Training'
 #taken from:
 #https://eli.thegreenplace.net/2018/elegant-python-code-for-a-markov-chain-text-generator/
 STATE_LEN = 5
-print('\nMARKOV CHAIN\n\nCreating the model with state length = {}.\nYou can edit STATE_LEN in the script.\n lower numbers yield more creative but messier results, higher numbers yield cleaner results but mostly regurgitate the training data.'.format(STATE_LEN))
+print('\nMARKOV CHAIN\n\nCreating the model with state length = {}.\nYou can edit STATE_LEN in the script.\n lower numbers yield more creative but messy results, higher numbers yield cleaner results but mostly reguritate the training data.')
 
 data = rawtxt
 model = defaultdict(Counter)
@@ -98,9 +87,6 @@ for state in statelist:
         print(''.join(out),'\n')
 
 
-# In[4]:
-
-
 # build the model: a two-layer LSTM
 print('\n\nLSTM\nBuilding LSTM model...')
 model = Sequential()
@@ -114,11 +100,8 @@ print('Compiling ...')
 model.compile(loss='categorical_crossentropy', optimizer=optimizer, metrics=['accuracy'])
 print('Done!')
 #load weights
-model.load_weights('TRUMPWEIGHTS.h5')
+model.load_weights('TRUMPWEIGHTS.hdf5')
 print('Weights loaded.')
-
-
-# In[9]:
 
 
 def sample(preds, temperature=1.0):
@@ -130,9 +113,8 @@ def sample(preds, temperature=1.0):
     probas = np.random.multinomial(1, preds, 1)
     return np.argmax(probas)
 def gen_text():
-    #adapted from https://github.com/keras-team/keras/blob/master/examples/lstm_text_generation.py
     start_index = random.randint(0, len(text) - maxlen - 1)
-    for diversity in [0.008,0.2, 0.5, 1.0, 1.2]:
+    for diversity in [0.008,0.2, 0.3, 0.4, 0.5, 1.0, 1.2]:
         print('\n----- diversity:', diversity)
 
         generated = ''
@@ -158,8 +140,6 @@ def gen_text():
     print()
 
 
-# In[10]:
-
 
 print('Text generation with a random starter seed:\n')
 gen_text()
@@ -168,7 +148,15 @@ gen_text()
 print('DONE.')
 
 
-# In[ ]:
+
+print('Loading weights of another model. This model has been trained a bit longer and on a bit more of the data.')
+model.load_weights('TRUMPWEIGHTS_more_training.hdf5')
+print('Done.\nText generation with a random starter seed:\n')
+gen_text()
+print('\nText generation with another random starter:')
+gen_text()
+print('DONE.')
+
 
 
 # define print out call back
@@ -205,7 +193,7 @@ def on_epoch_end(epoch, _):
                 print()
 
 print_callback = LambdaCallback(on_epoch_end=on_epoch_end)
-print('\nDone.\nModel training would start here. Uncomment the code to train it further.')
+print('Model training would start here. Uncomment the code to train it further.')
 # train model some more
 ## if you're not a GPU, this will take a very, very long time
 # model.fit(x, y,
