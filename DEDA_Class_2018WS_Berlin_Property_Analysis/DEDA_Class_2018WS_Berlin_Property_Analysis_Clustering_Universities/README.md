@@ -9,7 +9,7 @@ Name of Quantlet: DEDA_Class_2018WS_Berlin_Property_Analysis_Clustering_Universi
 
 Published in: Digital Economy and Decision Analytics (WS 18/19)
 
-Description: Use HDBSCAN clustering algorithm to cluster spatially heterogeneous university
+Description: Use HDBSCAN clustering algorithm to cluster spatially heterogeneous university points in lat, lng space within Berlin, DE.
 
 Keywords: HDBSCAN, Clustering, Spatial Analysis, Real Estate
 
@@ -19,7 +19,7 @@ Submitted: Sun. Feb 26 2019 by Alex Truesdale
 
 Datafile: universities (csv)
 
-See also: clustering_module.py &
+See also: clustering_module.py & 1) pre_generated/education_universities.html 2) pre_generated/education_universities.png 3) runtime_generated/education_universities.html
 
 ```
 <div align="center">
