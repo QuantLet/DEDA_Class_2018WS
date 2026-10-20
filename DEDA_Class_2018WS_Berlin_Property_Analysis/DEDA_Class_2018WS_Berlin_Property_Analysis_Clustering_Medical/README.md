@@ -9,7 +9,7 @@ Name of Quantlet: DEDA_Class_2018WS_Berlin_Property_Analysis_Clustering_Medical
 
 Published in: Digital Economy and Decision Analytics (WS 18/19)
 
-Description: Use HDBSCAN clustering algorithm to cluster spatially heterogeneous medical points
+Description: Use HDBSCAN clustering algorithm to cluster spatially heterogeneous medical points in lat, lng space within Berlin, DE.
 
 Keywords: HDBSCAN, Clustering, Spatial Analysis, Real Estate
 
@@ -19,7 +19,7 @@ Submitted: Sun. Feb 26 2019 by Alex Truesdale
 
 Datafile: medical (csv)
 
-See also: clustering_module.py &
+See also: clustering_module.py & 1) pre_generated/medical.html 2) pre_generated/medical.png 3) runtime_generated/medical.html
 
 ```
 <div align="center">
