@@ -9,7 +9,7 @@ Name of Quantlet: DEDA_Class_2018WS_Berlin_Property_Analysis_Gmap_Plotter
 
 Published in: Digital Economy and Decision Analytics (WS 18/19)
 
-Description: Example Quantlet for charting spatial data collected for this
+Description: Example Quantlet for charting spatial data collected for this project. This file plots all transit data for the city of Berlin, DE.
 
 Keywords: Spatial Analysis, Transit Data, Real Estate, Data Visualisation
 
@@ -19,7 +19,7 @@ Submitted: Sun. Feb 26 2019 by Alex Truesdale
 
 Datafile: transit_points (xlsx)
 
-See also: 1) pre_generated/html_renderings/*.html
+See also: 1) pre_generated/html_renderings/*.html 2) pre_generated/output_maps/*.png 3) runtime_generated/html_renderings/*.html
 
 ```
 <div align="center">
