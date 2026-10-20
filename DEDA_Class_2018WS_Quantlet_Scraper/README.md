@@ -9,7 +9,7 @@ Name of Quantlet: DEDA_Class_2018WS_Quantlet_Scraper
 
 Published in: Digital Economy and Decision Analytics (WS 18/19)
 
-Description: Scraping tool to gather raw code from all available .R scripts in
+Description: Scraping tool to gather raw code from all available .R scripts in the Quantlet repository.
 
 Keywords: Web Scraping, Tom Foolery
 
@@ -17,7 +17,7 @@ Author: Alex Truesdale
 
 Submitted: Sun. Feb 26 2019 by Alex Truesdale
 
-Datafile: 1) quantlet_links.txt
+Datafile: 1) quantlet_links.txt 2) raw_code_urls.txt 3) code_aggregate.R
 
 See also: code_output/*.R
 
