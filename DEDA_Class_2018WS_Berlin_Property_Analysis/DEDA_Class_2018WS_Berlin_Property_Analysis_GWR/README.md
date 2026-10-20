@@ -9,7 +9,7 @@ Name of Quantlet: DEDA_Class_2018WS_Berlin_Property_Analysis_GWR
 
 Published in: Digital Economy and Decision Analytics (WS 18/19)
 
-Description: Geographically Weighted Regression (GWR) for analysis of correlation
+Description: Geographically Weighted Regression (GWR) for analysis of correlation between real estate listing prices and social / location-based features for real estate within Berlin, DE, taking spatial colinearity into consideration.
 
 Keywords: Spatial Analysis, Social Data, Real Estate, Geographically Weighted Regression, GWR
 
@@ -19,6 +19,6 @@ Submitted: Sun. Feb 26 2019 by Alex Truesdale
 
 Datafile: final_listings (csv)
 
-See also: 1) gwr_stats_meta.csv
+See also: 1) gwr_stats_meta.csv 2) gwr_stats_features.csv
 
 ```
