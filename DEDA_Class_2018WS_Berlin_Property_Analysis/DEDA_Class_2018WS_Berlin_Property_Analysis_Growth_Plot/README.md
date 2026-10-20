@@ -9,7 +9,7 @@ Name of Quantlet: DEDA_Class_2018WS_Berlin_Property_Analysis_Growth_Plot
 
 Published in: Digital Economy and Decision Analytics (WS 18/19)
 
-Description: Plotting script for visualising the growth in property sale
+Description: Plotting script for visualising the growth in property sale prices in Berlin, DE over the last 11 years (by district).
 
 Keywords: Time Series Data, Real Estate, Data Visualisation
 
